@@ -36,6 +36,6 @@ app.get('/:query', function (req, res) {
 })
 
 // Start server
-app.listen(3000, function () {
-  console.log('Node.js listening on port 3000...')
+app.listen(process.env.port, function () {
+  console.log('Node.js listening...')
 })
